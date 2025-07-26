@@ -8,7 +8,15 @@
   font-family: 'departure-mono', sans-serif;
   font-weight: 400;
   font-style: normal;
+
+  text-decoration: none;
+  list-style: none;
     
+}
+
+ul, li {
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
@@ -20,8 +28,32 @@ body {
 /* SPECIFICS */ 
 
 nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-left: 39px;
+  margin-right: 39px;
+  margin-top: 19px;
+  margin-bottom: 19px;
+
+  padding: 9px;
+
+  /* border: solid 5px red; */
 
 }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 9px;
+  }
+
+  .nav-left, .nav-middle li, .nav-right {
+    border: solid 1px lightgray;
+    padding: 9px;
+    border-radius: 9px;
+  }
 
 .main {
 
