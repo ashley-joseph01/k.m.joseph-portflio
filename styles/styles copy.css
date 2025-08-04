@@ -1,32 +1,18 @@
-/* COLORS: https://coolors.co/232f1a-3b4e27-526d34-7a802c-b9b971-f7f1b6-ee7629-e75926-e03b22 */
-
-:root {
-    --darkGreen: #232f1a;
-    --mossGreen: #232f1a;
-    --fernGreen: #526D34;
-    --olive: #7A802C;
-    --sage: #B9B971;
-    --vanilla: #F7F1B6;
-    --pumpkin: #EE7629;
-    --flame: #E75926;
-    --chilliRed: #E03B22;
-}
-
 
 /* INDECATORS & ANIMATION */
 
 #current {
-  background-color: var(--pumpkin);
-  border-color: var(--pumpkin);
+  background-color: #d37147;
+  border-color: #743014;
   
 }
 
 #current-txt {
-  color: var(--vanilla);
+  color: #743014;
 }
 
 #current-alt {
-  color: var(--pumpkin);
+  color: #743014;
 
 }
 
@@ -37,8 +23,7 @@
 }
 
 nav li:hover, .footer-nav li:hover {
-  background-color: var(--pumpkin);
-  border-color: var(--pumpkin);
+  background-color: #bace8b;
   /* letter-spacing: 1px;
   transition: all .1s ease-in-out; */
 }
@@ -49,7 +34,7 @@ nav li:hover, .footer-nav li:hover {
    box-sizing: border-box; 
    padding: 0px;
    margin: 0px;
-   color: var(--darkGreen);
+   color: #6d8342;
 
   font-family: 'departure-mono', sans-serif;
   font-weight: 400;
@@ -70,11 +55,13 @@ body {
     display: flex;
     flex-direction: column;
 
-    background-color:hsla(94,28%,14%,1);
+    background-color:hsla(58,59%,88%,1);
     background-image:
-    radial-gradient(at 85% 33%, hsla(94,28%,14%,1) 0px, transparent 50%),
-    radial-gradient(at 80% 100%, hsla(88,35%,31%,1) 0px, transparent 50%),
-    radial-gradient(at 0% 0%, hsla(89,33%,22%,1) 0px, transparent 50%);
+    radial-gradient(at 90% 74%, hsla(49,17%,61%,1) 0px, transparent 50%),
+    radial-gradient(at 98% 14%, hsla(44,16%,79%,1) 0px, transparent 50%),
+    radial-gradient(at 70% 20%, hsla(54,87%,85%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(49,46%,91%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(54,87%,85%,1) 0px, transparent 50%);
     background-repeat: no-repeat, repeat;
     background-size: cover;
     }
@@ -103,7 +90,7 @@ nav {
     justify-content: space-between;
     gap: 9px;
 
-    border: solid 1px var(--sage);
+    border: solid 1px #96aa69;
     border-radius: 9px;
     padding: 9px;
 
@@ -111,54 +98,18 @@ nav {
   }
 
   .nav-left, .nav-middle li, .nav-right {
-    border: solid 1px var(--sage);
+    border: solid 1px #96aa69;
     padding: 9px;
     border-radius: 9px;
 
-    background-color: var(--sage);
-    /* color: var(--vanilla); */
+    background-color: #acc37c;
+    color: #6d8342;
 
   }
 
 .main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 19px;
-
-  border: solid 1px var(--sage);
-  border-radius: 9px;
-
-  margin: 29px;
-  padding: 19px;
-}
-
-.main-left, .main-right {
-  border: solid 1px var(--sage);
-  border-radius: 9px;
-  background-color: var(--sage);
 
 }
-
-.info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 26px;
-  padding: 9px;
-
-  color: var(--darkGreen);
-  width: 500px;
-  height: 300px;
-}
-
-.pic {
-  width: 300px;
-  height: 300px;
-}
-
 
 footer {
     margin-top: auto;
@@ -168,13 +119,7 @@ footer {
     padding: 20px;
     gap: 9px;
 
-    /* background-color: #dce9bd; */
-
-    /* border-radius: 9px;
-    border: 1px solid var(--sage);
-    margin-bottom: 19px;
-    margin-left: 19px;
-    margin-right: 19px; */
+    /* border: 1px solid #743014; */
 
     
 
@@ -184,29 +129,26 @@ footer {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    padding-left: 29px;
-    padding-right: 29px;
+    padding: 9px;
     gap: 9px;
-    border: 1px solid var(--sage);
-    /* background-color: var(--sage); */
+    border: 1px solid #96aa69;
+    /* background-color: #84592b; */
     border-radius: 9px;
   }
 
   .footer-left  {
     padding: 9px;
 
-    border: 1px solid var(--sage);
-    background-color: var(--sage);  
+    border: 1px solid #96aa69;
+    background-color: #acc37c;  
     border-radius: 9px;
   }
 
   .footer-right {
     padding: 9px;
 
-    border: 1px solid var(--sage);
-    background-color: var(--sage);
+    border: 1px solid #96aa69;
+    background-color: #acc37c;
     border-radius: 9px;
 
   }
