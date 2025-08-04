@@ -15,7 +15,7 @@
 
 /* INDECATORS & ANIMATION */
 
-#current {
+#current a{
   background-color: var(--pumpkin);
   border-color: var(--pumpkin);
   
@@ -36,7 +36,7 @@
   padding-bottom: 7px;
 }
 
-nav li:hover, .footer-nav li:hover {
+nav a:hover, .footer-nav a:hover {
   background-color: var(--pumpkin);
   border-color: var(--pumpkin);
   /* letter-spacing: 1px;
@@ -110,13 +110,30 @@ nav {
 
   }
 
-  .nav-left, .nav-middle li, .nav-right {
+  .nav-left, .nav-right {
     border: solid 1px var(--sage);
     padding: 9px;
     border-radius: 9px;
 
     background-color: var(--sage);
     /* color: var(--vanilla); */
+
+  }
+
+  .nav-middle li {
+    padding-top: 9px;
+    padding-bottom: 9px;
+
+  }
+
+  .nav-middle a {
+
+    border: solid 1px var(--sage);
+    padding: 9px;
+    border-radius: 9px;
+
+    background-color: var(--sage);
+    
 
   }
 
