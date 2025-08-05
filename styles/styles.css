@@ -1,3 +1,7 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
 /* COLORS: https://coolors.co/232f1a-3b4e27-526d34-7a802c-b9b971-f7f1b6-ee7629-e75926-e03b22 */
 
 :root {
@@ -11,7 +15,6 @@
     --flame: #E75926;
     --chilliRed: #E03B22;
 }
-
 
 /* INDECATORS & ANIMATION */
 
@@ -31,9 +34,14 @@
 }
 
 #header {
-  size: 19px;
-  font-weight: bold;
+  /* size: 19px; */
+  /* font-weight: bold; */
   padding-bottom: 7px;
+
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 29px;
 }
 
 nav a:hover, .footer-nav a:hover {
@@ -51,9 +59,10 @@ nav a:hover, .footer-nav a:hover {
    margin: 0px;
    color: var(--darkGreen);
 
-  font-family: 'departure-mono', sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-style: normal;
+  
 
   text-decoration: none;
   list-style: none;
