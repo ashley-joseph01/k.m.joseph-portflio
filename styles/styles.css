@@ -263,8 +263,10 @@ footer {
     /* height: 100%; */
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     gap: 19px;
+
+    height: 100vh;
 
     border: 5px solid red;
 
@@ -429,8 +431,8 @@ footer {
 }
 
   .carousel ul::scroll-button(left) {
-  right: calc(anchor(left) + 13px);
-  bottom: calc(anchor(top) - 13px);
+  right: calc(anchor(left) - 70px);
+  bottom: calc(anchor(top) - 224px);
 }
 
   .carousel ul::scroll-button(right) {
