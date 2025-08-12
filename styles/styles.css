@@ -45,11 +45,28 @@
   font-size: 30px; */
 }
 
+#button {
+    font-weight: bold;
+    font-size: 15px;
+    color: var(--darkGreen);
+
+
+
+}
+
+#button a {
+    border: 1px solid var(--sage);
+    background-color: var(--sage);
+    border-radius: 9px;
+    padding: 5px;
+
+}
+
   h1 {
     color: var(--vanilla);
   }
 
-nav a:hover, .footer-nav a:hover, .work-left:hover, .work-right:hover {
+nav a:hover, .footer-nav a:hover, .work-left:hover, .work-right:hover, #button a:hover {
   background-color: var(--pumpkin);
   border-color: var(--pumpkin);
   /* color: var(--vanilla); */
@@ -57,7 +74,7 @@ nav a:hover, .footer-nav a:hover, .work-left:hover, .work-right:hover {
   transition: all .1s ease-in-out; */
 }
 
-#current-alt a:hover {
+#current-alt:hover {
   color: var(--darkGreen);
 }
 
@@ -275,8 +292,23 @@ footer {
     gap: 19px;
 
     height: 100vh;
+    /* margin: 69px; */
 
     /* border: 5px solid red; */
+
+  }
+
+  .work-header {
+    width: 100%;
+    display: flex;
+    gap: 29px;
+    justify-content: space-between;
+    align-items: center;
+
+    /* border: 2px solid blue; */
+
+   
+  
 
   }
 
@@ -293,9 +325,38 @@ footer {
 
 
   }
+  
 
 
+  /* About me page */
 
+  .about-main {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 29px;
+    margin: 19px;
+    padding: 19px;
+
+    border: 1px solid var(--sage);
+
+  }
+
+  .about-left {
+    text-wrap: true;
+
+    border: 1px solid var(--sage);
+    background-color: var(--sage);
+
+  }
+
+  .about-right {
+
+    flex-grow: 1;
+    border: 1px solid var(--sage);
+    background-color: var(--sage);
+
+  }
 
 
 
