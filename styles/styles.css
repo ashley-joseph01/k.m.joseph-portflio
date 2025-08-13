@@ -6,6 +6,7 @@
 /* COLORS: https://coolors.co/232f1a-3b4e27-526d34-7a802c-b9b971-f7f1b6-ee7629-e75926-e03b22 */
 
 :root {
+    --shadow: #1c2415;
     --darkGreen: #232f1a;
     --mossGreen: #232f1a;
     --fernGreen: #526D34;
@@ -50,8 +51,6 @@
     font-size: 15px;
     color: var(--darkGreen);
 
-
-
 }
 
 #button a {
@@ -60,6 +59,20 @@
     border-radius: 9px;
     padding: 5px;
 
+}
+
+#card {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+
+ border-radius: 19px;
+ box-shadow: 5px 5px 5px var(--shadow);
+}
+
+#card:hover {
+  outline: 5px solid var(--olive);
 }
 
   h1 {
@@ -80,6 +93,9 @@ nav a:hover, .footer-nav a:hover, .work-left:hover, .work-right:hover, #button a
 
 
 /* GENERALS */
+
+html, body { max-width: 100%; overflow-x: hidden; }
+
 * {
    box-sizing: border-box; 
    padding: 0px;
@@ -93,6 +109,9 @@ nav a:hover, .footer-nav a:hover, .work-left:hover, .work-right:hover, #button a
 
   text-decoration: none;
   list-style: none;
+
+  max-width: 100%;
+  /* overflow-x: hidden; */
     
 }
 
@@ -119,13 +138,15 @@ body {
 
 nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 
-  margin-left: 39px;
-  margin-right: 39px;
+  width: 100%;
+
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 19px;
-  margin-bottom: 19px;
+  margin-bottom: 5px;
 
   padding: 9px;
 
@@ -185,7 +206,10 @@ nav {
   /* border: solid 1px var(--sage); */
   border-radius: 9px;
 
-  margin: 29px;
+  margin-top: 10px;
+  margin-right: 29px;
+  margin-left: 29px;
+  margin-bottom: 29px;
   padding: 19px;
 }
 
@@ -299,16 +323,17 @@ footer {
   }
 
   .work-header {
-    width: 100%;
+    width: 100%;  
     display: flex;
     gap: 29px;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
 
-    /* border: 2px solid blue; */
+    margin-right: 50px;
+    margin-bottom: 19px;
+    margin-left: 269px;
 
-   
-  
+    /* border: 2px solid blue; */
 
   }
 
@@ -326,37 +351,6 @@ footer {
 
   }
   
-
-
-  /* About me page */
-
-  .about-main {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 29px;
-    margin: 19px;
-    padding: 19px;
-
-    border: 1px solid var(--sage);
-
-  }
-
-  .about-left {
-    text-wrap: true;
-
-    border: 1px solid var(--sage);
-    background-color: var(--sage);
-
-  }
-
-  .about-right {
-
-    flex-grow: 1;
-    border: 1px solid var(--sage);
-    background-color: var(--sage);
-
-  }
 
 
 
@@ -426,12 +420,14 @@ footer {
     align-items: center;
 
     padding: 19px;
+
+    /* border: 2px solid blue; */
     
 
   }
 
   .carousel ul {
-  width: 75vw;
+  width: 100vw;
   height: 400px;
   padding: 9px;
 
@@ -503,12 +499,12 @@ footer {
 }
 
   .carousel ul::scroll-button(left) {
-  right: calc(anchor(left) - 70px);
+  right: calc(anchor(left) - 50px);
   bottom: calc(anchor(top) - 224px);
 }
 
   .carousel ul::scroll-button(right) {
-  left: calc(anchor(right) - 70px);
+  left: calc(anchor(right) - 50px);
   bottom: calc(anchor(top) - 224px);
 }
 
@@ -527,8 +523,8 @@ footer {
 }
   .carousel ul::column::scroll-marker {
   content: "";
-  width: 16px;
-  height: 16px;
+  width: 9px;
+  height: 9px;
   background-color: transparent;
   border: 2px solid var(--pumpkin);
   /* border-radius: 0% 100% 0% 100% / 46% 54% 46% 54% ; */
