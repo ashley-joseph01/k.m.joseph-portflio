@@ -61,25 +61,11 @@
 
 }
 
-#card {
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
-
- border-radius: 19px;
- box-shadow: 5px 5px 5px var(--shadow);
-}
-
-#card:hover {
-  outline: 5px solid var(--olive);
-}
-
   h1 {
     color: var(--vanilla);
   }
 
-nav a:hover, .footer-nav a:hover, .work-left:hover, .work-right:hover, #button a:hover {
+nav a:hover, .footer-nav a:hover, .work-left a:hover, .work-right a:hover, #button a:hover {
   background-color: var(--pumpkin);
   border-color: var(--pumpkin);
   /* color: var(--vanilla); */
@@ -340,15 +326,22 @@ footer {
 
   .work-left, .work-right {
     display: flex;
-    padding: 19px;
+ 
 
-    background-color: var(--sage);
-    border: 1px solid var(--sage);
-    border-radius: 9px;
+   
 
     /* size: 69px; */
 
 
+  }
+
+  .work-left a, .work-right a {
+    padding: 19px;
+
+    background-color: var(--sage);
+    border: 1px solid var(--sage);
+
+    border-radius: 9px;  
   }
   
 
@@ -428,7 +421,7 @@ footer {
 
   .carousel ul {
   width: 100vw;
-  height: 400px;
+  height: 450px;
   padding: 9px;
 
   overflow-x: hidden;
@@ -450,7 +443,29 @@ footer {
   padding: 19px;
   margin: 0 9px;
 
+  text-align: center;
+
+  border-radius: 19px;
+  box-shadow: 5px 5px 5px var(--shadow);
+}
+
+li #role {
+  /* width: 100px; */
+  padding: 9px;
+  border: solid var(--olive);
+  border-radius: 9px;
+  background-color: var(--olive);
+  color: var(--vanilla);
+}
+
+/* #link {
   text-align: left;
+  border: 2px solid var(--olive);
+  border-radius: 50%;
+} */
+
+.carousel li:hover {
+  outline: 4px solid var(--olive);
 }
 
   .carousel li:nth-child(even) {
