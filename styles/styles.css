@@ -12,6 +12,7 @@
     --fernGreen: #526D34;
     --olive: #7A802C;
     --sage: #B9B971;
+    --sage50: #b9b9719a;
     --vanilla: #F7F1B6;
     --pumpkin: #EE7629;
     --flame: #E75926;
@@ -385,6 +386,70 @@ footer {
 
 
 
+  /* MODAL */
+
+  dialog[open] {
+    display: flex;
+  }
+
+  .modal-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    height: 100dvh;
+    width: 100dvw;
+    z-index: 10;
+    inset: 0;
+
+
+    
+    background-color: var(--sage50);
+    border: solid 2px var(--pumpkin);
+  }
+
+    .project-modal {
+        display: flex;
+        flex-direction: column;
+
+        /* justify-content: center; */
+        align-items: center;
+
+        border: solid 2px var(--olive);
+        background-color: var(--sage);
+        border-radius: 19px;
+
+        padding: 19px;
+
+        /* outline: 5px solid var(--olive); */
+        width: 800px;
+        height: 800px;
+
+        inset: auto;
+
+      }
+
+      .modal-collums {
+        display: flex;
+
+        justify-content: center;
+
+      }
+
+      .modal-left {
+        /* flex-grow: 1; */
+
+      }
+
+      .modal-right {
+
+      }
+
+    #poster {
+      aspect-ratio: 240 / 341;
+    }
+
 
 
 
@@ -421,7 +486,7 @@ footer {
 
   .carousel ul {
   width: 100vw;
-  height: 450px;
+  height: 500px;
   padding: 9px;
 
   overflow-x: hidden;
@@ -447,6 +512,8 @@ footer {
 
   border-radius: 19px;
   box-shadow: 5px 5px 5px var(--shadow);
+
+  /* position: relative; */
 }
 
 li #role {
