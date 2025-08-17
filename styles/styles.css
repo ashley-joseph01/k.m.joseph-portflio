@@ -386,49 +386,28 @@ footer {
 
 
 
-  /* MODAL */
 
-  dialog[open] {
-    display: flex;
-  }
 
-  .modal-box {
+    #poster {
+      aspect-ratio: 240 / 341;
+    }
+
+  .modal {
+    padding: 19px;
+    max-width: 50ch;
+
     display: flex;
+    flex-direction: column;
+
+    /* justify-content: center; */
     align-items: center;
-    justify-content: center;
 
-    position: fixed;
-    height: 100dvh;
-    width: 100dvw;
-    z-index: 10;
-    inset: 0;
+    border: solid 2px var(--olive);
+    background-color: var(--sage);
+    border-radius: 19px;
 
-
-    
-    background-color: var(--sage50);
-    border: solid 2px var(--pumpkin);
+    padding: 19px;
   }
-
-    .project-modal {
-        display: flex;
-        flex-direction: column;
-
-        /* justify-content: center; */
-        align-items: center;
-
-        border: solid 2px var(--olive);
-        background-color: var(--sage);
-        border-radius: 19px;
-
-        padding: 19px;
-
-        /* outline: 5px solid var(--olive); */
-        width: 800px;
-        height: 800px;
-
-        inset: auto;
-
-      }
 
       .modal-collums {
         display: flex;
@@ -437,35 +416,10 @@ footer {
 
       }
 
-      .modal-left {
-        /* flex-grow: 1; */
+  .modal::backdrop {
+    background-color: var(--sage50);
 
-      }
-
-      .modal-right {
-
-      }
-
-    #poster {
-      aspect-ratio: 240 / 341;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  }
 
 
 

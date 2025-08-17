@@ -6,6 +6,7 @@
     <title>KMJoseph Portfolio | My Work</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <script src="https://kit.fontawesome.com/29d5866cff.js" crossorigin="anonymous"></script>
+   
 </head>
 <body>
     <nav>
@@ -34,8 +35,9 @@
                     <p id="header">Nausicaa</p> 
                     <p>Log: unknown</p>
                     <p>Date: 8/14/25</p>
-                    <div class="modal-box">
-                        <dialog open class="project-modal">
+                    <button class="open-button">open</button>
+                    <!-- <div class="modal-box"> -->
+                        <dialog class="modal" id="project-modal">
                             <h1 id="header">Nausicaa</h1>
                             <div class="modal-collums">
                                 <div class="modal-left">
@@ -46,8 +48,10 @@
                                 </div>
                             
                             </div>
+                            <button class="close-button">close</button>
+
                         </dialog>
-                    </div>
+                    <!-- </div> -->
                 </li>
                 <li>
                     <img src="../img/earthtoecho.jpg" height="300px">
@@ -109,5 +113,7 @@
             </div>
         </div>
     </footer>
+
+     <script src="../scripts/modal.js"></script>
 </body>
 </html>
