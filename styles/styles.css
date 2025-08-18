@@ -1,7 +1,9 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 
 /* COLORS: https://coolors.co/232f1a-3b4e27-526d34-7a802c-b9b971-f7f1b6-ee7629-e75926-e03b22 */
 
@@ -37,14 +39,24 @@
 }
 
 #header {
-  /* size: 19px; */
-  font-weight: bold;
-  padding-bottom: 7px;
+  font-size: 29px;
+
+  font-family: "IM Fell DW Pica", serif;
+  font-weight: 400;
+  font-style: normal;
 
   /* font-family: "Fleur De Leah", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: 30px; */
+}
+
+#logo {
+  font-size: 19px;
+
+  font-family: "IM Fell DW Pica", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #button {
@@ -85,13 +97,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 
 * {
    box-sizing: border-box; 
-   padding: 0px;
-   margin: 0px;
    color: var(--darkGreen);
-
-  font-family: "Libre Baskerville", serif;
-  font-weight: 400;
-  font-style: normal;
   
 
   text-decoration: none;
@@ -99,7 +105,17 @@ html, body { max-width: 100%; overflow-x: hidden; }
 
   max-width: 100%;
   /* overflow-x: hidden; */
-    
+
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 17px;
+}
+
+*:not(dialog) {
+  padding: 0px;
+  margin: 0px;
 }
 
 ul, li {
@@ -350,47 +366,13 @@ footer {
 
 
 
-
-
-  @media(max-width: 768px){ 
-
-    body {
-        width: 100vw;
-        height: auto;
-        padding: 0px;
-        margin: 0px;
-
-        background-image: none;
-
-        display: flex;
-    }
-
-    nav {
-      display: flex;
-      flex-direction: column;
-      gap: 9px;
-
-      font-size: 15px;
-    }
-
-    footer {
-      display: flex;
-      flex-direction: column;
-
-      font-size: 15px;
-    }
-
-
-  }
-
-
-
-
-
-
     #poster {
       aspect-ratio: 240 / 341;
+      border-radius: 9px;
+      
     }
+
+
 
   dialog[open] {
     padding: 19px;
@@ -398,6 +380,7 @@ footer {
 
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     /* justify-content: center; */
     align-items: center;
@@ -407,14 +390,28 @@ footer {
     border-radius: 19px;
 
     padding: 19px;
+
+    /* overflow-y: hidden; */
+
+  }
+
+  dialog[open] .modal-collums{
+    display: flex;
+
   }
 
 
-  dialog[open] .modal::backdrop {
+  
+
+
+   .modal::backdrop {
     background-color: var(--sage50);
 
   }
 
+  .project-card > * {
+    margin-bottom: 5px;
+  }
 
 
   /* Carousel */
@@ -432,9 +429,24 @@ footer {
 
   }
 
+  .open-button, .close-button {
+    width: 100%;
+    padding: 9px;
+    margin-top: 10px;
+
+    background-color: var(--olive);
+    border-radius: 9px;
+    border: solid 1px var(--olive);
+
+    font-size: 19px;
+    color: var(--vanilla);
+
+    cursor: pointer;
+  }
+
   .carousel ul {
   width: 100vw;
-  height: 500px;
+  height: 600px;
   padding: 9px;
 
   overflow-x: hidden;
@@ -565,3 +577,44 @@ li #role {
   .carousel ul::column::scroll-marker:target-current {
   background-color: var(--pumpkin);
 }
+
+
+
+
+
+
+
+
+
+
+  @media(max-width: 768px){ 
+
+    body {
+        width: 100vw;
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+
+        background-image: none;
+
+        display: flex;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+
+      font-size: 15px;
+    }
+
+    footer {
+      display: flex;
+      flex-direction: column;
+
+      font-size: 15px;
+    }
+
+
+  }
+
