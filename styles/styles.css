@@ -392,7 +392,7 @@ footer {
       aspect-ratio: 240 / 341;
     }
 
-  .modal {
+  dialog[open] {
     padding: 19px;
     max-width: 50ch;
 
@@ -409,14 +409,8 @@ footer {
     padding: 19px;
   }
 
-      .modal-collums {
-        display: flex;
 
-        justify-content: center;
-
-      }
-
-  .modal::backdrop {
+  dialog[open] .modal::backdrop {
     background-color: var(--sage50);
 
   }
