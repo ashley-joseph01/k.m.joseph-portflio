@@ -23,22 +23,22 @@
 
 /* INDECATORS & ANIMATION */
 
-.current a{
+#current a{
   background-color: var(--pumpkin);
   border-color: var(--pumpkin);
   
 }
 
-.current-txt {
+#current-txt {
   color: var(--vanilla);
 }
 
-.current-alt {
+#current-alt {
   color: var(--pumpkin);
 
 }
 
-.header {
+#header {
   font-size: 29px;
 
   font-family: "IM Fell DW Pica", serif;
@@ -59,14 +59,14 @@
   font-style: normal;
 }
 
-.button {
+#button {
     font-weight: bold;
     font-size: 15px;
     color: var(--darkGreen);
 
 }
 
-.button a {
+#button a {
     border: 1px solid var(--sage);
     background-color: var(--sage);
     border-radius: 9px;
@@ -86,7 +86,7 @@ nav a:hover, .footer-nav a:hover, .work-left a:hover, .work-right a:hover, #butt
   transition: all .1s ease-in-out; */
 }
 
-.current-alt:hover {
+#current-alt:hover {
   color: var(--darkGreen);
 }
 
@@ -366,7 +366,7 @@ footer {
 
 
 
-    .poster {
+    #poster {
       aspect-ratio: 240 / 341;
       border-radius: 9px;
       
@@ -475,6 +475,21 @@ footer {
 
   /* position: relative; */
 }
+
+li #role {
+  /* width: 100px; */
+  padding: 9px;
+  border: solid var(--olive);
+  border-radius: 9px;
+  background-color: var(--olive);
+  color: var(--vanilla);
+}
+
+/* #link {
+  text-align: left;
+  border: 2px solid var(--olive);
+  border-radius: 50%;
+} */
 
 .carousel li:hover {
   outline: 4px solid var(--olive);
