@@ -434,7 +434,7 @@ footer {
 
 
    .modal::backdrop {
-    background-color: var(--sage50);
+    background-color: hsla(94, 28%, 14%, .75);
 
   }
 
