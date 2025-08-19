@@ -78,7 +78,7 @@
     color: var(--vanilla);
   }
 
-nav a:hover, .footer-nav a:hover, .work-left a:hover, .work-right a:hover, #button a:hover {
+nav a:hover, .footer-nav a:hover, .work-left:hover, .work-right:hover, .work-middle:hover,#button a:hover {
   background-color: var(--pumpkin);
   border-color: var(--pumpkin);
   /* color: var(--vanilla); */
@@ -352,7 +352,26 @@ footer {
 
   }
 
-  .work-left a, .work-right a {
+  .main-work a {
+    height: 50%;
+
+    /* border: red solid 2px; */
+  }
+
+  .main-work h1 {
+    padding-top: 19px;
+    color: var(--darkGreen);
+  }
+
+
+
+  .work-left , .work-right, .work-middle {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
     padding: 19px;
 
     background-color: var(--sage);
@@ -360,6 +379,12 @@ footer {
 
     border-radius: 9px;  
   }
+
+  .main-work img {
+    border-radius: 9px;
+  }
+
+  
   
 
 
@@ -370,6 +395,10 @@ footer {
       aspect-ratio: 240 / 341;
       border-radius: 9px;
       
+    }
+
+    dialog #poster {
+     width: 1000px;
     }
 
 
@@ -579,7 +608,92 @@ li #role {
 }
 
 
+/* ABOUT PAGE */
 
+.about-main {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.about-top, .about-middle, .about-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-main p {
+  width: 300px;
+  color: var(--vanilla);
+
+  border: solid 2px var(--sage);
+  border-radius: 9px;
+  padding: 9px;
+  margin: 9px;
+}
+
+.about-main img {
+  width: 300px;
+  margin: 9px;
+  padding: 9px;
+
+  border: solid 2px var(--sage);
+  border-radius: 9px;
+}
+
+#pic {
+  height: 300px;
+  border-radius: 50%;
+}
+
+/* RESUME */
+
+.resume-main {
+  height: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: stretch;
+
+  color: var(--vanilla);
+}
+
+.resume-main h1, h2, h3, p {
+    color: var(--darkGreen);
+}
+
+.resume-left, .resume-right {
+  display: flex;
+  flex-direction: column;
+
+  padding: 19px;
+  margin: 19px;
+
+  border: 2px solid var(--sage);
+  border-radius: 9px;
+
+  background-color: var(--sage);
+
+}
+
+.resume-main #header{
+  padding-bottom: 19px;
+
+}
+
+.resume-main li {
+  padding: 9px;
+}
+
+#header2 {
+  font-size: 20px;
+  font-weight: bold;
+
+  padding-bottom: 9px;
+
+}
 
 
 
