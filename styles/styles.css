@@ -86,9 +86,14 @@ nav a:hover, .footer-nav a:hover, .work-left:hover, .work-right:hover, .work-mid
   transition: all .1s ease-in-out; */
 }
 
+.nav-right a:hover {
+  background-color: var(--sage);
+}
+
 #current-alt:hover {
   color: var(--darkGreen);
 }
+
 
 
 /* GENERALS */
