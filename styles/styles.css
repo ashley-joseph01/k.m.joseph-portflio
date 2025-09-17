@@ -166,8 +166,8 @@ h1 {
 }
 
 nav a:hover, .footer-nav a:hover, .work-left:hover, .work-right:hover, .work-middle:hover,#button a:hover, .signature a:hover {
-  background-color: var(--darkSlate);
-  border-color: var(--darkSlate);
+  background-color: var(--lightGrey);
+  border-color: var(--lightGrey);
   /* color: var(--vanilla); */
   /* letter-spacing: 1px;
   transition: all .1s ease-in-out; */
@@ -603,9 +603,9 @@ footer {
     padding: 9px;
     margin-top: 10px;
 
-    background-color: var(--slate);
+    background-color: var(--lightGrey);
     border-radius: 9px;
-    border: solid 1px var(--slate);
+    border: solid 1px var(--lightGrey);
 
     font-size: 19px;
     color: var(--darkestSlate);
@@ -871,9 +871,50 @@ li #role {
 
 }
 
+/* @ CONTACT PAGE */
 
+.contact-main, .link-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.bold {
+  font-weight: bold;
+}
 
+.link-list ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 19px;
+
+}
+
+.link-list li {
+  padding: 19px;
+  background-color: var(--lightGrey);
+  border: 2px solid var(--lightGrey);
+  border-radius: 9px;
+}
+
+.link-list a {
+  text-decoration: underline;
+}
+
+.link-list h1 {
+  font-size: 29px;
+
+  font-family: "IM Fell DW Pica", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  text-decoration: underline;
+
+  margin-bottom: 19px;
+}
 
 
 
