@@ -191,6 +191,8 @@ nav a:hover, .footer-nav a:hover, .work-left:hover, .work-right:hover, .work-mid
 
 html, body { max-width: 100%; overflow-x: hidden; }
 
+html { overflow-y: hidden;}
+
 * {
    box-sizing: border-box; 
    color: var(--darkestSlate);
@@ -615,7 +617,7 @@ footer {
 
   .carousel ul {
   width: 100vw;
-  height: 600px;
+  height: 580px;
   padding: 9px;
 
   overflow-x: hidden;
@@ -936,10 +938,13 @@ li #role {
     nav {
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 9px;
 
       font-size: 15px;
     }
+
+   
 
     footer {
       display: flex;
