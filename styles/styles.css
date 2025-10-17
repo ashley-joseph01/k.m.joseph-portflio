@@ -1,4 +1,11 @@
 /* FONTS */
+@font-face {
+  font-family: middleSaxony;
+  src: url(../fonts/MIDDST__.TTF);
+
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -98,7 +105,7 @@
 #header {
   font-size: 29px;
 
-  font-family: "IM Fell DW Pica", serif;
+  font-family: "middleSaxony", fantasy;
   font-weight: 400;
   font-style: normal;
 
@@ -111,7 +118,7 @@
 #headertwo {
   font-size: 25px;
 
-  font-family: "IM Fell DW Pica", serif;
+  font-family: "middleSaxony", fantasy;
   font-weight: 400;
   font-style: normal;
 
@@ -128,7 +135,7 @@
 .header {
   font-size: 29px;
 
-  font-family: "IM Fell DW Pica", serif;
+  font-family: "middleSaxony", fantasy;
   font-weight: 400;
   font-style: normal;
 
@@ -139,9 +146,9 @@
 }
 
 #logo {
-  font-size: 19px;
+  font-size: 29px;
 
-  font-family: "IM Fell DW Pica", serif;
+  font-family: "middleSaxony", fantasy;
   font-weight: 400;
   font-style: normal;
 }
@@ -204,11 +211,9 @@ html { overflow-y: hidden;}
   max-width: 100%;
   /* overflow-x: hidden; */
 
-  font-family: "Libre Franklin", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: normal;
+  font-family: "IM Fell DW Pica", serif;
+  font-weight: 400;
   font-style: normal;
-  font-size: 17px;
 }
 
 *:not(dialog) {
@@ -286,15 +291,22 @@ nav {
     padding-top: 9px;
     padding-bottom: 9px;
 
+
+
   }
 
-  .nav-middle a, .nav-middle-home a {
+  .nav-middle a, .nav-middle-home a, nav-right  {
 
     border: solid 1px var(--slate);
     padding: 9px;
     border-radius: 9px;
 
     background-color: var(--slate);
+
+    font-family: "middleSaxony", fantasy;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 25px;
     
 
   }
@@ -582,6 +594,44 @@ footer {
 
   .project-card > * {
     margin-bottom: 5px;
+  }
+
+  .card-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    width: 100%;
+
+    border: solid red 1px;
+  }
+
+  .card-layout ul {
+    display: flex;
+    justify-content: center;
+    padding: 19px;
+    gap: 19px;
+
+    flex-wrap: wrap;
+
+    width: 80%;
+
+    border: solid green 1px;
+  }
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 250px;
+    height: 550px;
+
+
+    border: solid blue 1px;
   }
 
 
