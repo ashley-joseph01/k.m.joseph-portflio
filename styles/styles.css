@@ -1,10 +1,43 @@
+/* @ FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=IM+Fell+English:ital@0;1&family=Pirata+One&display=swap');
+
+/* 
+
+.pirata-one-regular {
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.grenze-gotisch-<uniquifier> {
+  font-family: "Grenze Gotisch", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.im-fell-english-regular {
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.im-fell-english-regular-italic {
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+*/
 
 :root {
     --sepiaLightest: #eadbcb;
     --sepiaLight: #e3ceb9;
+    --sepiaLight98: #e3ceb98e;
     --sepia: #dcc1a7;
     --sepiaDark: #d4b595;
     --sepiaDarkest: #cda882;
+    --txtDark: #52402f;
     --shadow: #b99a7c92;
 
 }
@@ -17,18 +50,278 @@
     max-width: 100%;
     padding: 0;
     margin: 0;
-}
+    color: var(--txtDark);
+
+    font-family: "IM Fell English", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    }
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     width: 100dvw;
-    height: auto;
+    min-height: 100dvh;
 
     background-image: url("../img/background.png");
-    /* background-color: black; */
+    background-color: var(--sepiaLightest);
+
+    /* border: solid 1px red; */
+}
+
+h1 {
+    font-size: 49px;
+    font-family: "IM Fell English", serif;
+    font-weight: 400;
+    font-style: italic;
+    }
+
+h2 {
+    font-size: 39px;
+  font-family: "Grenze Gotisch", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  
+}
+
+h3 {
+    font-size: 29px;
+  font-family: "Grenze Gotisch", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-top: 29px;
+    gap: 19px;
+
+    /* border: solid 5px red; */
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    /* padding: 19px; */
+    width: 100%;
+
+    /* border: solid 2px green; */
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    /* border: solid 1px var(--sepiaLight); */
+    /* background-color: var(--sepiaLight); */
+}
+
+nav {
+    width: 100%;
+    padding: 19px;
+    background-color: var(--sepiaLight);
+    /* border: solid 2px var(--sepiaDark); */
+
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+
+    /* border: solid 1px red; */
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--sepia);
+    outline: solid 2px var(--sepia);
+    border-radius: 9px;
+    
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 29px;
+    padding-right: 29px;
+
+    max-width: 150px;
+    min-width: 150px;
+}
+
+nav ul li {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* padding: 19px; */
+    gap: 19px;
+    
+
+    /* background-color: var(--sepiaLight); */
+}
+
+.content-top, .content-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 19px;
+    gap: 19px;
+    
+
+    /* background-color: var(--sepiaLight); */
+}
+
+
+
+.inner-left {
+    display: flex;
+    justify-content: center;
+    /* width: 50%; */
+
+
+}
+
+.inner-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-top: 69px;
+    padding-bottom: 69px;
+    /* width: 50%; */
+    background-color: var(--sepiaLight);
+    border: solid 9px var(--sepia);
+    border-radius: 19px;
+}
+
+.inner-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+}
+
+.inner-header h2 {
+    font-size: 29px;
+
+}
+
+.inner-right p {
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+}
+
+.img-container{
+    width: 400px;
+    height: 400px;
+
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    /* border: dotted 5px var(--sepiaDarkest); */
+}
+
+.strip-container {
+    display: flex;
+}
+
+/* HTML: <img class="film-strip" src="" alt=""> */
+.film-strip {
+  --s: 8px; /* control the size */
+  --c: var(--txtDark);
+ 
+  width: calc(20*var(--s));
+  aspect-ratio: 1.25;
+  background: 
+    conic-gradient(at 50% var(--s),var(--c) 75%,#0000 0) 
+    0 0/calc(2*var(--s)) calc(100% - var(--s)) padding-box;
+  border: var(--s) solid var(--c);
+  padding: calc(var(--s)*2.5) calc(var(--s)*1.5);
+  box-sizing: content-box;
+
+
+  object-fit: cover;
+}
+
+.strip-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--txtDark);
+    border-radius: 29px;
+}
+
+.strip-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    padding: 19px;
+
+
+}
+
+.gap9 {
+    margin: 9px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: auto;
+    padding: 19px;
+    border: solid 1px var(--sepiaLight);
+    background-color: var(--sepiaLight);
 
     /* border: solid 1px red; */
 }
@@ -36,3 +329,288 @@ body {
 
 
 
+/* @ Resume */
+
+.content-resume {
+    background-color: var(--sepiaLight98);
+    border: solid 5px var(--sepiaLight);
+    border-radius: 19px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 19px;
+    /* gap: 19px; */
+}
+
+
+.resume-middle, .resume-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    /* border: solid 2px pink; */
+
+}
+
+.resume-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 29px;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 19px;
+
+    /* border: solid 2px red; */
+}
+
+.img-container-sm {
+    width: 300px;
+    height: 300px;
+
+    /* border: solid 1px green; */
+
+}
+
+.img-container-sm img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: solid 3px var(--sepiaDark);
+    /* border: dotted 5px var(--sepiaDarkest); */
+}
+
+
+.resume-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding-top: 69px;
+    padding-bottom: 69px;
+
+    border: solid 3px var(--sepiaDark);
+    border-radius: 29px;
+    background-color: var(--sepia);
+
+    /* border: solid 1px blue; */
+}
+
+
+
+.res-inner-top {
+    width: 100%;
+    border: solid 2px var(--sepiaDark);
+    background-color: var(--sepia);
+    padding: 16px;
+
+    /* border: solid 2px violet; */
+
+}
+
+.res-inner-top, .res-inner-top p  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.res-inner-middle {
+    width: 100%;
+}
+
+.res-inner-left, .res-inner-right, .resume-bottom ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 19px;
+
+    gap: 19px;
+
+    /* border: solid 2px hotpink; */
+
+}
+
+.resume-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 300px;
+    height: 400px;
+    padding: 19px;
+
+    border: solid 2px var(--sepiaDark);
+    background-color: var(--sepia);
+}
+
+.resume-bottom {
+    border: solid 2px var(--sepiaDark);
+    background-color: var(--sepia);
+    /* padding: 16px; */
+}
+
+.icon {
+    height: 60px;
+}
+
+.resume-card h3 {
+    border: solid 2px var(--sepiaDarkest);
+    background-color: var(--sepiaDark);
+    /* border-radius: 19px; */
+    padding: 9px;
+}
+
+.resume-card li {
+    margin-bottom: 9px;
+}
+
+.main-li {
+    border: solid 2px var(--sepiaDark);
+    background-color: var(--sepiaDark);
+    padding: 9px;
+
+}
+
+.list-title {
+    font-size: 19px;
+    margin-bottom: 9px;
+}
+
+/* @ CONTACT PAGE */
+
+.content-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover {
+    /* height: 180px; */
+    /* width: 1000px; */
+    object-fit: cover;
+
+    margin-bottom: 19px;
+    border: solid 5px var(--sepiaDarkest);
+    border-radius: 19px;
+
+}
+
+.contact-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    /* margin-top: 29px; */
+
+    /* border: solid 5px red; */
+}
+
+.contact-inner {
+    width: 500px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 19px;
+
+    background-color: var(--sepiaLight);
+    border: solid 2px var(--sepia);
+}
+
+
+.contact-inner ul {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    
+}
+
+.contact-inner li {
+    background-color: var(--sepia);
+    border: solid 2px var(--sepiaDark);
+    border-radius: 19px;
+    padding: 9px;
+}
+
+.contact-inner p {
+    font-size: 20px;
+}
+
+.contact-li {
+    text-decoration: underline;
+    font-style: italic;
+    
+    /* border: solid red 2px; */
+}
+
+
+
+
+/* @ SPECIALS */
+
+.italic {
+    font-family: "IM Fell English", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+#current {
+    font-family: "IM Fell English", serif;
+    font-weight: 400;
+    font-style: italic;
+    outline-color: var(--sepiaDark);
+}
+
+footer a, .resume-contact span{
+    text-decoration: underline;
+
+}
+
+/* @ ANIMATIONS */
+
+nav a :hover {
+    font-family: "IM Fell English", serif;
+    font-weight: 400;
+    font-style: italic;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @ Resources
+
+FILM STRIP CODE: https://css-shape.com/film-strip/
+
+
+*/
