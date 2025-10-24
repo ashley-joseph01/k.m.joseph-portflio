@@ -164,7 +164,7 @@ nav ul li {
 
     background-color: var(--sepia);
     outline: solid 2px var(--sepia);
-    border-radius: 9px;
+    /* border-radius: 9px; */
     
     padding-top: 9px;
     padding-bottom: 9px;
@@ -443,7 +443,7 @@ footer {
     flex-direction: column;
     gap: 16px;
     width: 300px;
-    height: 400px;
+    height: 425px;
     padding: 19px;
 
     border: solid 2px var(--sepiaDark);
@@ -576,14 +576,23 @@ footer a, .resume-contact span{
 
 /* @ ANIMATIONS */
 
+nav ul li  {
+    border-radius: 9px;
+    transition: border-radius 150ms ease-in-out;
+}
+
+nav ul li:hover {
+    border-radius: 0px;
+}
+
 nav a :hover {
     font-family: "IM Fell English", serif;
     font-weight: 400;
     font-style: italic;
 
-
-
 }
+
+
 
 
 
