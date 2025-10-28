@@ -38,6 +38,7 @@
     --sepiaDark: #d4b595;
     --sepiaDarkest: #cda882;
     --txtDark: #52402f;
+    --txtDarkTP: #52402f81;
     --shadow: #b99a7c92;
 
 }
@@ -71,6 +72,10 @@ body {
     background-color: var(--sepiaLightest);
 
     /* border: solid 1px red; */
+}
+
+body:has(dialog[open]) {
+    overflow-y: hidden;
 }
 
 h1 {
@@ -560,6 +565,7 @@ footer {
 }
 
 .card-item {
+    width: 100%;
     background-color: var(--txtDark);
     border-radius: 19px;
 
@@ -571,7 +577,19 @@ footer {
 
 .cards h3 {
     color: var(--sepiaLightest);
-    padding: 19px;
+    /* padding: 19px; */
+}
+
+.card-item a {
+    width: 100%;
+    height: 69px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
 }
 
 .img-container-sq {
@@ -614,7 +632,12 @@ button {
     cursor: pointer;
 }
 
+button.open-button {
+    width: 100%;
+}
+
 .project-container {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -635,6 +658,51 @@ button {
     font-size: 29px;
     font-style: italic;
 }
+
+/* @ MODALS */
+
+.modal-box {
+    width: 100%;
+    height: 100%;
+
+}
+
+    dialog #poster {
+     width: 1000px;
+    }
+
+
+
+  dialog[open] {
+    padding: 19px;
+    max-width: 100ch;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 19px;
+
+    padding: 19px;
+
+    margin: auto;
+    background-color: var(--sepiaLight);
+    border: solid 5px var(--sepiaDark);
+
+
+  }
+
+  dialog[open] .modal-collums{
+    display: flex;
+    gap: 19px;
+
+  }
+
+
+   .modal::backdrop {
+    background-color: var(--txtDarkTP);
+
+  }
 
 
 
@@ -666,6 +734,8 @@ footer a, .resume-contact span{
 
 
 
+
+
 /* @ ANIMATIONS */
 
 nav ul li  {
@@ -683,6 +753,12 @@ nav a :hover {
     font-style: italic;
 
 }
+
+
+
+
+
+
 
 
 
