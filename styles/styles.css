@@ -123,6 +123,7 @@ body:has(dialog[open]) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 
@@ -409,7 +410,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 75%;
 
     /* border: solid 2px pink; */
 
@@ -501,7 +502,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 300px;
+    width: 800px;
     height: 425px;
     padding: 19px;
 
@@ -537,10 +538,29 @@ footer {
 
 }
 
+.long {
+    height: 650px;
+}
+
 .list-title {
     font-size: 19px;
     margin-bottom: 9px;
 }
+
+.inline-icon-btn {
+    cursor: pointer;
+    background: transparent;
+    margin-left: 4px;
+    transition: opacity 80ms ease-in-out;
+}
+
+.inline-icon-btn:hover, .inline-icon-btn:focus-within {
+    opacity: .8;
+}
+
+
+
+
 
 /* @ CONTACT PAGE */
 
@@ -776,7 +796,7 @@ button.open-button {
     outline-color: var(--sepiaDarkest);
 }
 
-footer a, .resume-contact span{
+footer a, .resume-contact span, .underline {
     text-decoration: underline;
 
 }
