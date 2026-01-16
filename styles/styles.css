@@ -862,12 +862,17 @@ nav.desktop-nav a :hover {
 }
 
 @media(min-width: 769px) and (max-width: 1280px) {
-    section.main {
+    section.main, footer {
         width: 100%;
+        padding-inline: 5%;
+    }
+
+    footer {
+        width: 90%;
     }
 }
 
-@media(min-width: 769px) and (max-width: 900px) {
+@media(min-width: 769px) and (max-width: 980px) {
     nav.desktop-nav ul li {
         min-width: auto;
     }
@@ -878,6 +883,13 @@ nav.desktop-nav a :hover {
 /* @ MOBILE */
 
 @media(max-width: 768px) {
+
+
+    section.main {
+        width: 100%;
+        padding-inline: 5%;
+    }
+
 
     html {
         min-height: 100dvh;
@@ -1090,6 +1102,22 @@ nav.desktop-nav a :hover {
         height: 200px;
         width: 200px;
         aspect-ratio: 1;
+    }
+
+
+
+
+
+
+    /* CONTACT PAGE */
+
+
+    .contact-bottom {
+        flex-direction: column;
+    }
+
+    .contact-inner, footer {
+        width: 90%;
     }
 
 
