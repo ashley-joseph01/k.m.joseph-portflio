@@ -212,6 +212,7 @@ nav.desktop-nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 19px;
 
     /* border: solid 1px red; */
@@ -245,12 +246,15 @@ nav.desktop-nav ul li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+
     width: 100%;
     /* padding: 19px; */
     gap: 19px;
     
 
     /* background-color: var(--sepiaLight); */
+    /* border: solid red 2px; */
 }
 
 .content-top, .content-bottom {
@@ -462,6 +466,10 @@ footer {
     /* border: solid 1px blue; */
 }
 
+.resume-intro h2 {
+    text-align: center;
+}
+
 
 
 .res-inner-top {
@@ -634,11 +642,13 @@ footer {
 
 .cards {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 29px;
 }
 
 .card-item {
-    width: 100%;
+    width: 350px;
     background-color: var(--txtDark);
     border-radius: 19px;
 
@@ -646,6 +656,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .cards h3 {
@@ -850,7 +861,17 @@ nav.desktop-nav a :hover {
     }
 }
 
+@media(min-width: 769px) and (max-width: 1280px) {
+    section.main {
+        width: 100%;
+    }
+}
 
+@media(min-width: 769px) and (max-width: 900px) {
+    nav.desktop-nav ul li {
+        min-width: auto;
+    }
+}
 
 
 
