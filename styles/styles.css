@@ -732,8 +732,29 @@ button.open-button {
     justify-content: center;
     align-items: center;
     gap: 29px;
-
 }
+
+.project-container-grid {
+    width: 100%;
+    display: grid;
+    gap: 29px;
+    /* grid-auto-flow: column; */
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 700px) {
+    .project-container-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-container-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 
 .project-card {
     background-color: var(--sepia);
@@ -742,18 +763,43 @@ button.open-button {
     padding: 9px;
 }
 
+.project-container-grid > .project-card {
+    background-color: var(--sepia);
+    border: solid 5px var(--sepiaDarkest);
+    border-radius: 19px;
+    padding: 9px;
+    display: flex;
+    flex-direction: column;
+}
+
 .project-title {
     padding: 5px;
     font-size: 29px;
     font-style: italic;
 }
 
+.project-container-grid > .project-card > .project-info {
+    margin-bottom: 29px;
+}
+
+.project-container-grid > .project-card > .open-button {
+    margin-top: auto;
+}
+
+
+
 /* @ MODALS */
 
 .modal-box {
+    position: absolute;
+    z-index: -1;
+}
+
+.model-box:has(.modal[open]) {
     width: 100%;
     height: 100%;
-
+    position: relative;
+    z-index: 1;
 }
 
     dialog #poster {
@@ -1092,10 +1138,10 @@ nav.desktop-nav a :hover {
     }
 
 
-    section.content .content-top,
+    /* section.content .content-top,
     section.content .content-bottom {
         display: none;
-    }
+    } */
 
     .content-middle {
         flex-direction: column;
