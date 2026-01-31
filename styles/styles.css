@@ -318,11 +318,12 @@ nav.desktop-nav ul li {
     display: flex;
     justify-content: center;
     font-size: 19px;
+    line-height: 1.4;
 }
 
 .img-container{
-    width: 400px;
-    height: 400px;
+    width: 280px;
+    height: 280px;
 
 }
 
@@ -340,25 +341,28 @@ nav.desktop-nav ul li {
 
 /* HTML: <img class="film-strip" src="" alt=""> */
 .film-strip {
-  --s: 8px; /* control the size */
-  --c: var(--txtDark);
- 
-  width: calc(20*var(--s));
-  aspect-ratio: 1.25;
-  background: 
-    conic-gradient(at 50% var(--s),var(--c) 75%,#0000 0) 
-    0 0/calc(2*var(--s)) calc(100% - var(--s)) padding-box;
-  border: var(--s) solid var(--c);
-  padding: calc(var(--s)*2.5) calc(var(--s)*1.5);
-  box-sizing: content-box;
+    --s: 8px; /* control the size */
+    --c: var(--txtDark);
+    
+    width: calc(20*var(--s));
+    aspect-ratio: 1.25;
+    background: 
+        conic-gradient(at 50% var(--s),var(--c) 75%,#0000 0) 
+        0 0/calc(2*var(--s)) calc(100% - var(--s)) padding-box;
+    border: var(--s) solid var(--c);
+    padding: calc(var(--s)*2.5) calc(var(--s)*1.5);
+    box-sizing: content-box;
 
-
-  object-fit: cover;
+    object-fit: cover;
 }
 
 .strip-container {
     width: 100%;
-    display: flex;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: var(--s);
+    align-content: center;
     justify-content: center;
     align-items: center;
     /* background-color: var(--txtDark); */
@@ -371,13 +375,37 @@ nav.desktop-nav ul li {
 }
 
 .strip-container img {
-    width: calc(100% / 6);
+    /* width: calc(100% / 6); */
     /* height: 150px; */
     object-fit: cover;
     /* padding: 19px; */
     aspect-ratio: 1;
-    padding-inline: calc(var(--s) / 2);
+    /* padding-inline: calc(var(--s) / 2); */
 }
+
+
+@media (max-width: 480px) {
+    
+    .strip-container {
+        grid-template-columns: repeat(4, 1fr);
+        --s: 8px;
+    }
+
+    /* .strip-container img:nth-child(4), */
+    .strip-container img:nth-child(5),
+    .strip-container img:nth-child(6) {
+        display: none;
+    }
+
+}
+
+@media (max-width: 700px) and (min-width: 480px) {
+    .strip-container {
+        --s: 10px;
+    }
+}
+
+
 
 .gap9 {
     margin: 9px;
@@ -978,8 +1006,8 @@ nav.desktop-nav a :hover {
     #mobileNavToggle {
         display: block;
         position: absolute;
-        top: 30px;
-        left: 20px;
+        top: 43px;
+        left: 18px;
         z-index: 1;
 
         -webkit-user-select: none;
@@ -1126,7 +1154,7 @@ nav.desktop-nav a :hover {
 
     .main {
         width: 100%;
-        margin-top: 69px;
+        /* margin-top: 69px; */
     }
 
 
