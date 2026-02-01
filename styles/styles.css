@@ -381,6 +381,8 @@ nav.desktop-nav ul li {
     /* padding: 19px; */
     aspect-ratio: 1;
     /* padding-inline: calc(var(--s) / 2); */
+    height: 100%;
+    width: 100%;
 }
 
 
