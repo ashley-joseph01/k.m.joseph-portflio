@@ -1,6 +1,3 @@
-console.log("Starting JS #2!")
-console.log(":3 #2")
-
 document.addEventListener("DOMContentLoaded", () => {
 
     const ageText = document.getElementById('karzAge');

@@ -275,6 +275,10 @@ nav.desktop-nav ul li {
     /* background-color: var(--sepiaLight); */
 }
 
+.content-middle {
+    margin-block: 36px;
+}
+
 
 
 .inner-left {
@@ -358,7 +362,7 @@ nav.desktop-nav ul li {
 
 .strip-container {
     width: 100%;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: var(--s);
@@ -697,11 +701,14 @@ footer {
 .cards h3 {
     color: var(--sepiaLightest);
     /* padding: 19px; */
+    height: 69px;
+    display: flex;
+    align-items: center;
 }
 
 .card-item a {
     width: 100%;
-    height: 69px;
+    /* height: 69px; */
 
     display: flex;
     flex-direction: column;
@@ -767,22 +774,36 @@ button.open-button {
 .project-container-grid {
     width: 100%;
     display: grid;
-    gap: 29px;
     /* grid-auto-flow: column; */
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 69px;
+    padding-inline: 69px;
+}
+
+@media (max-width: 900px) {
+
+    .project-container-grid {
+        gap: 29px;
+        padding-inline: 29px;
+    }
 }
 
 @media (max-width: 700px) {
     .project-container-grid {
         grid-template-columns: 1fr 1fr;
+        gap: 9px;
+        padding-inline: 29px;
     }
 }
 
 @media (max-width: 480px) {
     .project-container-grid {
         grid-template-columns: 1fr;
+        gap: 19px;
+        padding-inline: 9px;
     }
 }
+
 
 
 
@@ -816,6 +837,9 @@ button.open-button {
     margin-top: auto;
 }
 
+.project-container-grid > .project-card > img {
+    border-radius: 5%;
+}
 
 
 /* @ MODALS */
@@ -833,7 +857,7 @@ button.open-button {
 }
 
     dialog #poster {
-     width: 1000px;
+     
     }
 
 
@@ -897,7 +921,9 @@ footer a, .resume-contact span, .underline {
     padding-bottom: 19px;
 }
 
-
+.bold {
+    font-weight: bold;
+}
 
 
 
