@@ -151,6 +151,10 @@ h3 {
   font-style: normal;
 }
 
+.wrap {
+    text-wrap: wrap;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -856,9 +860,7 @@ button.open-button {
     z-index: 1;
 }
 
-    dialog #poster {
-     
-    }
+
 
 
 
